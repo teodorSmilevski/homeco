@@ -1,0 +1,68 @@
+* {
+  font-family: "Nunito", sans-serif;
+  font-weight: 100;
+}
+.header {
+  min-height: 50vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.75), rgba(4, 9, 30, 0.75)),
+    url("images/product-lr.jpg");
+}
+
+#mainNavbar {
+  font-size: 1.2rem;
+  font-weight: 100;
+  background-color: #eeeeee;
+}
+
+#mainNavbar .nav-link {
+  color: #222831;
+}
+
+#mainNavbar .nav-link:hover {
+  color: #00adb5;
+}
+
+#mainNavbar .navbar-brand {
+  color: #00adb5;
+  font-size: 1.5rem;
+}
+
+#headingGroup span {
+  color: #00adb5;
+}
+
+#headingGroup h1 {
+  font-weight: 100;
+  font-size: 4rem;
+}
+
+.text-box {
+  color: white;
+  width: 80%;
+  top: 60%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.text-box h1 {
+  font-size: 62px;
+}
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 30 px;
+  color: white;
+}
+
+/* NOTE: PRODUCTS */
+.section {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}

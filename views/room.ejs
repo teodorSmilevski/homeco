@@ -1,0 +1,62 @@
+<html lang="en">
+  <!--header-->
+  <%- include('partials/header')%>
+  <body>
+    <section class="header">
+      <!---NAVBAR-->
+      <%- include('partials/navbar')%>
+      <div class="text-box">
+        <h1>Tips for the <%= name %></h1>
+        <p><%= description %></p>
+      </div>
+    </section>
+
+    <section class="section container room py-5">
+      <h1>How to be more efficient in the <%= name %></h1>
+      <p><%= description %></p>
+      <p><%= text %></p>
+    </section>
+
+    <section class="section room">
+      <h1>FEATURED PRODUCTS:</h1>
+      <section class="products container pt-3">
+        <div class="row justify-content-center">
+          <% for (let product of products) {%>
+          <div class="col-xl-6 col-m-6 d-flex justify-content-center">
+            <div class="card mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4 d-flex flex-column justify-content-center">
+                  <img
+                    src="<%- product.img %>"
+                    class="img-fluid rounded-start"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title"><%= product.productName %></h5>
+                    <p class="card-text text-body-secondary">
+                      <%= product.description %>
+                    </p>
+                    <p class="card-text">
+                      <a href="<%- product.link %>" class="myButton"
+                        >Amazon Link</a
+                      >
+                      <small class="text-body-primary"
+                        >Price: <%= product.price %></small
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <% } %>
+        </div>
+      </section>
+    </section>
+
+    <!--footer-->
+    <%- include('partials/footer')%>
+  </body>
+</html>
